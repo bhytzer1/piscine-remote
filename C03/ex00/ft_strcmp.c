@@ -13,19 +13,22 @@
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
-	int	t;
-	
+
 	i = 0;
-	t = 0;
-	while(s1[i] != '\0')
+	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
 	{
 		i++;
 	}
-	while(s2[t] != '\0')
-	{
-		t++;
-	}
-	return (i - t);
+	return (s1[i] - s2[i]);
 }
 
+/*#include<stdio.h>
 
+int	main(void)
+{
+	// char	*s1 = "falena";
+	// char	*s2 = "figah";
+
+	printf("%d\n", ft_strcmp("ciao", "ciao"));
+	printf("%d\n", ft_strcmp("ciao", "filip"));
+}*/

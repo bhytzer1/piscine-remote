@@ -13,11 +13,11 @@
 char	*ft_strlowcase(char *str)
 {
 	int	i;
-	
+
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if(str[i] >= 'A' && str[i] <= 'Z')
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
 			str[i] = str[i] + 32;
 		}
@@ -30,7 +30,7 @@ char	*ft_strlowcase(char *str)
 
 int	main(void)
 {
-	char	i[] = "SKIBIDI7";
+	char	i[] = "SKIB3 IDI7";
 	
 	printf("%s\n", i);
 	ft_strlowcase(i);

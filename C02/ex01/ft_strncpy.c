@@ -10,26 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char	*i)
-{
-	int	b;
-
-	b = 0;
-	while(i[b] != '\0')
-	{
-		b++;
-	}
-	return(b);
-}
-
 char	*ft_strncpy(char	*dest, char	*src, unsigned int n)
 {
-	unsigned int	sizedest;
 	unsigned int	i;
 
 	i = 0;
-	sizedest = ft_strlen(dest);
-	while (src[i] != '\0' && i < sizedest && i < n)
+	while (src[i] != '\0' && i < n)
 	{
 		dest[i] = src[i];
 		i++;
@@ -39,8 +25,6 @@ char	*ft_strncpy(char	*dest, char	*src, unsigned int n)
 		dest[i] = '\0';
 		i++;
 	}
-	if (i == sizedest && dest[i])
-		dest[i] = '\0';
 	return (dest);
 }
 
@@ -50,14 +34,11 @@ char	*ft_strncpy(char	*dest, char	*src, unsigned int n)
 int	main()
 {
 	int	i = 5;
-	char n[7] = "skibidi";
-	char m[7];
+	char n[] = "skibidi";
+	char m[50];
 	
 	strncpy(m, n, i);
 	printf("%s\n",n);
 	printf("%s\n", m);
 	
 }*/
-
-
-

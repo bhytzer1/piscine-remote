@@ -30,7 +30,7 @@ char	*ft_strupcase(char *str)
 
 int	main(void)
 {
-	char i[] = "globglob7";
+	char i[] = "globg3 lob7";
 	printf("%s\n", i);
 	ft_strupcase(i);
 	printf("%s\n", i);

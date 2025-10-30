@@ -17,12 +17,10 @@ int	ft_str_is_uppercase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			i++;
-		else if (str[i] == ' ')
-			return (1);
-		else
+		if (!((str[i] >= 'A' && str[i] <= 'Z')
+				|| (str[i] == ' ')))
 			return (0);
+		i++;
 	}
 	return (1);
 }
@@ -31,7 +29,7 @@ int	ft_str_is_uppercase(char *str)
 
 int	main(void)
 {
-	char *i = " ";
+	char *i = "SSSSSS";
 	
 	printf("%d\n", ft_str_is_uppercase(i));
 }*/

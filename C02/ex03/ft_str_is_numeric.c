@@ -17,12 +17,10 @@ int	ft_str_is_numeric(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] <= '0' && str[i] >= '9')
-			i++;
-		else if (str[i] == ' ')
-			return (1);
-		else
+		if (!((str[i] >= '0' && str[i] <= '9')
+				|| (str[i] == ' ')))
 			return (0);
+		i++;
 	}
 	return (1);
 }
@@ -31,7 +29,7 @@ int	ft_str_is_numeric(char *str)
 
 int	main(void)
 {
-	char	*i = " ";
+	char	*i = "3232323";
 
 	printf("%d\n", ft_str_is_numeric(i));
 }*/
