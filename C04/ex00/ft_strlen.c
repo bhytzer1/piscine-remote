@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dmandric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 23:16:19 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/03 22:28:52 by dmandric         ###   ########.fr       */
+/*   Created: 2025/11/03 22:55:22 by dmandric          #+#    #+#             */
+/*   Updated: 2025/11/03 22:55:23 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+int ft_strlen(char *str)
 {
 	int	i;
-
+	
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
+	while(str[i] != '\0')
 	{
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return(i);
 }
 
-#include<stdio.h>
-
+/*#include<stdio.h>
 int	main()
 {
-
-	printf("%d\n", ft_strcmp("ciaooo", "ciaooo"));
-	printf("%d\n", ft_strcmp("filippo", "filibustiere"));
-}
+	char *g = "dadadadad";
+	
+	printf("%d\n", ft_strlen(g));
+}*/

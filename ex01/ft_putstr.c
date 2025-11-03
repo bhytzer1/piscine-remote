@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dmandric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 23:16:19 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/03 22:28:52 by dmandric         ###   ########.fr       */
+/*   Created: 2025/11/04 00:26:23 by dmandric          #+#    #+#             */
+/*   Updated: 2025/11/04 00:26:24 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+void ft_putstr(char *str)
 {
-	int	i;
-
+	int i;
+	
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
+	while(str != '\0')
 	{
-		i++;
+		
 	}
-	return (s1[i] - s2[i]);
 }
-
-#include<stdio.h>
 
 int	main()
 {
-
-	printf("%d\n", ft_strcmp("ciaooo", "ciaooo"));
-	printf("%d\n", ft_strcmp("filippo", "filibustiere"));
+	char g 
 }
